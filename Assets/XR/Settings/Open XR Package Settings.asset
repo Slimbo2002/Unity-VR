@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: InterceptCreateSessionFeature Standalone
   m_EditorClassIdentifier: 
   m_enabled: 1
+  <failedInitialization>k__BackingField: 0
   nameUi: 'Sample: Intercept Create Session'
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.example.intercept
@@ -21,6 +22,7 @@ MonoBehaviour:
   priority: 0
   required: 0
   message: Hello from C#!
+  <receivedMessage>k__BackingField: 
 --- !u!114 &-8905250422349482718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34,6 +36,7 @@ MonoBehaviour:
   m_Name: InterceptCreateSessionFeature WSA
   m_EditorClassIdentifier: 
   m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: 'Sample: Intercept Create Session'
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.example.intercept
@@ -42,6 +45,7 @@ MonoBehaviour:
   priority: 0
   required: 0
   message: Hello from C#!
+  <receivedMessage>k__BackingField: 
 --- !u!114 &-8838881899544335970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,6 +59,7 @@ MonoBehaviour:
   m_Name: MeshingTeapotFeature Android
   m_EditorClassIdentifier: 
   m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: 'Sample: Meshing Teapot'
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.example.meshing
@@ -95,6 +100,7 @@ MonoBehaviour:
   m_Name: MeshingTeapotFeature Standalone
   m_EditorClassIdentifier: 
   m_enabled: 1
+  <failedInitialization>k__BackingField: 0
   nameUi: 'Sample: Meshing Teapot'
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.example.meshing
@@ -160,9 +166,7 @@ MonoBehaviour:
   - {fileID: 4963040286616351577}
   - {fileID: 4893829345954421791}
   - {fileID: 2497339995422133549}
-  - {fileID: -9161458720672482221}
   - {fileID: -5941725581135416239}
-  - {fileID: -8275959241254014909}
   - {fileID: 1507748248788215057}
   - {fileID: 7413458854745118488}
   - {fileID: 4054846353496584751}
@@ -207,9 +211,7 @@ MonoBehaviour:
   - {fileID: -8713360564979088519}
   - {fileID: -4336759062255281338}
   - {fileID: 2108680517467021396}
-  - {fileID: -8905250422349482718}
   - {fileID: -624291281775398508}
-  - {fileID: -5227967135795230597}
   - {fileID: 9196319973034488462}
   - {fileID: -5776695027522146013}
   - {fileID: -5739338961201253931}
@@ -290,6 +292,7 @@ MonoBehaviour:
   m_Name: MeshingTeapotFeature WSA
   m_EditorClassIdentifier: 
   m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: 'Sample: Meshing Teapot'
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.example.meshing
@@ -330,6 +333,7 @@ MonoBehaviour:
   m_Name: InterceptCreateSessionFeature Android
   m_EditorClassIdentifier: 
   m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: 'Sample: Intercept Create Session'
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.example.intercept
@@ -338,6 +342,7 @@ MonoBehaviour:
   priority: 0
   required: 0
   message: Hello from C#!
+  <receivedMessage>k__BackingField: 
 --- !u!114 &-624291281775398508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -572,9 +577,7 @@ MonoBehaviour:
   features:
   - {fileID: -7680569054996836393}
   - {fileID: 5162673418781203785}
-  - {fileID: -1499496771562394445}
   - {fileID: 2201526210780377864}
-  - {fileID: -8838881899544335970}
   - {fileID: -144900062595498242}
   - {fileID: -401492794600741679}
   - {fileID: 3028574783108719176}
