@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Button : MonoBehaviour
 {
-    public int value;
 
-
+    public void ButtonClicked(string number)
+    {
+        Debug.Log(number + "clicked");
+    }
 
 }

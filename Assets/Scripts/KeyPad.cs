@@ -14,12 +14,14 @@ public class KeyPad : MonoBehaviour
     public GameObject buttonEight;
     public GameObject buttonNine;
 
+    Button button;
+
     public string code = "123";
-    public string input;
+    public string input = "123";
 
     private void Start()
     {
-        buttonOne.GetComponent<Button>().PressButton.AddListener(ButtonOne);
+        button.GetComponent<Button>();
     }
 
     void Update()
@@ -30,9 +32,12 @@ public class KeyPad : MonoBehaviour
         }
     }
 
-    void ButtonOne()
+    private void OnTriggerEnter(Collider other)
     {
-        input = input + "1";
+        if (other == buttonOne)
+        {
+            button.ButtonClicked("1");
+        }
     }
 
 
