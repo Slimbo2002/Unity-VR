@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Light
   - hand
+  - Cable
   layers:
   - Default
   - TransparentFX

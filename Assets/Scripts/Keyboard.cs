@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class Keyboard : MonoBehaviour
 {
+    public Monitor monitor;
+    public Material black;
+
+    bool isActive = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        monitor = monitor.GetComponent<Monitor>();
     }
 
     // Update is called once per frame
@@ -18,9 +22,10 @@ public class Keyboard : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "hand")
+        if (other.tag == "cable")
         {
-            Destroy(gameObject);
+            monitor.SetMaterial();
+
         }
     }
 }
