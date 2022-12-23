@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Light
-  - hand
-  - Cable
+  - accoladeOne
+  - accoladeTwo
+  - accoladeThree
+  - USB
   layers:
   - Default
   - TransparentFX

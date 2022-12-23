@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-        TimerOn = true;
+        
     }
 
     void Update()
