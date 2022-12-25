@@ -31774,7 +31774,7 @@ CATCH_0029_1:
 					Exception_t* L_9 = V_1;
 					NullCheck(L_8);
 					bool L_10;
-					L_10 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(113 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_8, L_9);
+					L_10 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(114 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_8, L_9);
 					V_2 = L_10;
 					bool L_11 = V_2;
 					if (!L_11)

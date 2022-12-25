@@ -1,24 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Accolades : MonoBehaviour
 {
     [SerializeField]
-    GameObject accoladeOne, accoladeTwo, accoladeThree, usb;
-    
+    GameObject accoladeOne, accoladeTwo, accoladeThree, usb, timerText, winText, loseText;
 
+    [SerializeField]
+    TMP_Text timer;
+
+    [SerializeField]
+    GameObject displayOne, displayTwo, displayThree, puzzleOne;
+
+    public Material green;
     public bool collect1;
 
     public bool collect2;
 
     public bool collect3;
 
-    USB usbScript;
+    Timer timerScript;
 
     void Start()
     {
-        usbScript = usb.GetComponent<USB>();
+        timerScript = timer.GetComponent<Timer>();
+
     }
 
     // Update is called once per frame
@@ -26,8 +35,12 @@ public class Accolades : MonoBehaviour
     {
          if (collect1&& collect2 && collect3)
          {
-            Debug.Log("Win");
+            Win();
          } 
+         else if (timerScript.timerDone)
+         {
+            SceneManager.LoadScene("SampleScene");
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -35,22 +48,51 @@ public class Accolades : MonoBehaviour
         if (other.tag == "accoladeOne")
         {
             collect1 = true;
+            displayOne.GetComponent<MeshRenderer>().material = green;
             Destroy(accoladeOne);
         }
         else if (other.tag == "accoladeTwo")
         {
             collect2 = true;
+            displayTwo.GetComponent<MeshRenderer>().material = green;
             Destroy(accoladeTwo);
         }
         else if (other.tag == "accoladeThree")
         {
             collect3 = true;
+            displayThree.GetComponent<MeshRenderer>().material = green;
             Destroy(accoladeThree);
         }
-        else if (other.tag == "USB")
+        else if (other.tag == "hand")
         {
-            usbScript.TurnOnScreen();
+
+            TurnOnScreen();
         }
+    }
+    public void TurnOnScreen()
+    {
+        displayOne.SetActive(true);
+        displayTwo.SetActive(true);
+        displayThree.SetActive(true);
+       
+        timerScript.timerOn = true;
+
+        puzzleOne.SetActive(true);
+    }
+    void Win()
+    {
+        timerScript.timerOn = false;
+    }
+    void Lose()
+    {
+        LoseRun();
+    }
+    IEnumerator LoseRun()
+    {
+        loseText.SetActive(true);
+        timerText.SetActive(false);
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("SampleScene");
     }
 
 }

@@ -8,6 +8,7 @@ TagManager:
   - accoladeTwo
   - accoladeThree
   - USB
+  - hand
   layers:
   - Default
   - TransparentFX

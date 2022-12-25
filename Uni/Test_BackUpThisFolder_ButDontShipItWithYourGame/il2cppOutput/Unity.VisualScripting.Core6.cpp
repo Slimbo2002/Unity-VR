@@ -13432,7 +13432,7 @@ IL_0050:
 		WeakReference_tD4B0518CE911FFD9FAAB3FCD492644A354312D8E* L_24 = V_0;
 		NullCheck(L_24);
 		bool L_25;
-		L_25 = VirtualFuncInvoker0< bool >::Invoke(7 /* System.Boolean System.WeakReference::get_TrackResurrection() */, L_24);
+		L_25 = VirtualFuncInvoker0< bool >::Invoke(8 /* System.Boolean System.WeakReference::get_TrackResurrection() */, L_24);
 		fsData_t6E144EC58C6E449805AB7BF77BCDAB7230BBFA23* L_26 = (fsData_t6E144EC58C6E449805AB7BF77BCDAB7230BBFA23*)il2cpp_codegen_object_new(fsData_t6E144EC58C6E449805AB7BF77BCDAB7230BBFA23_il2cpp_TypeInfo_var);
 		NullCheck(L_26);
 		fsData__ctor_m740FD2D0D7D78B72181DFC0216FED95818893268(L_26, L_25, NULL);
@@ -27800,7 +27800,7 @@ IL_0028:
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_27 = V_4;
 		NullCheck(L_26);
 		Type_t* L_28;
-		L_28 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(120 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_26, L_27);
+		L_28 = VirtualFuncInvoker1< Type_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(121 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_26, L_27);
 		*((RuntimeObject**)L_24) = (RuntimeObject*)L_28;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_24, (void*)(RuntimeObject*)L_28);
 	}
@@ -29279,7 +29279,7 @@ IL_0062:
 		Type_t* L_23 = V_6;
 		NullCheck(L_23);
 		Type_t* L_24;
-		L_24 = VirtualFuncInvoker0< Type_t* >::Invoke(110 /* System.Type System.Type::get_BaseType() */, L_23);
+		L_24 = VirtualFuncInvoker0< Type_t* >::Invoke(111 /* System.Type System.Type::get_BaseType() */, L_23);
 		V_6 = L_24;
 		// while (looseType != null && instanceType != typeof(UnityObject) && storageType.IsAssignableFrom(looseType));
 		Type_t* L_25 = V_6;

@@ -6,30 +6,34 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float TimeLeft;
-    public bool TimerOn = false;
+    public float timeLeft;
+    public bool timerOn;
 
-    public TMP_Text TimerTxt;
+    public bool timerDone;
+
+    public TMP_Text timerTxt;
 
     void Start()
     {
-        
+        timerOn = false;
+        timeLeft = 300f;
     }
 
     void Update()
     {
-        if (TimerOn)
+        if (timerOn)
         {
-            if (TimeLeft > 0)
+            if (timeLeft > 0)
             {
-                TimeLeft -= Time.deltaTime;
-                updateTimer(TimeLeft);
+                timeLeft -= Time.deltaTime;
+                updateTimer(timeLeft);
             }
             else
             {
                 Debug.Log("Time is UP!");
-                TimeLeft = 0;
-                TimerOn = false;
+                timeLeft = 0;
+                timerOn = false;
+                timerDone = true;
             }
         }
     }
@@ -41,6 +45,6 @@ public class Timer : MonoBehaviour
         float minutes = Mathf.FloorToInt(currentTime / 60);
         float seconds = Mathf.FloorToInt(currentTime % 60);
 
-        TimerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        timerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
